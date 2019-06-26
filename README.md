@@ -97,7 +97,7 @@ Making an API call to this endpoint adds a philosopher to the database.
 #### Required:
 A correctly formatted philosopher object must be provided in the request body in order to post to the database.
 
-#### Example of correctly formatted brewery object:
+#### Example of correctly formatted philosopher object:
 ```
 { name: <STRING>, born: <Integer>, died: <Integer>  }
 ```
