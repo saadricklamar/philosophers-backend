@@ -2,7 +2,7 @@
 
 ## About the API
 
-'Philosophers Backend' is an API that provides data about breweries in Denver and the beers that they carry. Users can add data to the API through POST requests, delete data with DELETE requests, and edit data with PUT requests
+'Philosophers Backend' is an API that provides data about Philosophers and the works they have writte Users can add data to the API through POST requests, delete data with DELETE requests, and edit data with PUT requests
 
 ## /api/philosophers
 
@@ -109,3 +109,17 @@ A correctly formatted philosopher object must be provided in the request body in
    "died": 2002
 }
 ```
+
+## /api/philosophers/:id
+
+### **`DELETE`**
+
+Making an API call to this endpoint deletes the philosopher with the specified id. 
+
+#### Required:
+An id that corresponds to a philosopher present in the database must be provided in the URL.
+
+URL with specified id:
+
+`localhost:3000/api/v1/philosophers/23`
+
