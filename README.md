@@ -129,6 +129,38 @@ Data returned for each work includes:
     }
  ]
   ```
+## /api/works/:id
+
+### **`GET`**
+
+Making an API call to this endpoint returns a work of the specific id. 
+
+Data returned for each work includes:
+
+* work id
+* name of work
+* philosopher_id (connecting that work to the philosopher who wrote it)
+* creation timestamp
+* update timestamp
+
+#### Required:
+An id that corresponds to a work present in the database must be provided in the URL to return the desired JSON.
+
+URL with specified id:
+
+`localhost:3000/api/v1/works/45`
+
+#### Example of returned JSON:
+
+```
+ {
+     "id": 45,
+     "work": "Truth and Method",
+     "philosopher_id": 26,
+     "created_at": "2019-06-26T15:46:20.518Z",
+     "updated_at": "2019-06-26T15:46:20.518Z"
+    }
+```
 
 ## /api/philosophers
 
