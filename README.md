@@ -69,8 +69,43 @@ Data returned for each philosopher includes:
 * update timestamp
 
 #### Required:
-An id that corresponds to a brewery present in the database must be provided in the URL to return the desired JSON.
+An id that corresponds to a philosopher present in the database must be provided in the URL to return the desired JSON.
 
 URL with specified id:
 
 `localhost:3000/api/v1/philosophers/23`
+
+#### Example of returned JSON:
+
+```
+ {
+     "id": 23,
+     "name": "Ponty",
+     "born": 1908,
+     "died": 1961,
+     "created_at": "2019-06-26T15:46:20.469Z",
+     "updated_at": "2019-06-26T15:46:20.469Z"
+ }
+```
+
+## /api/philosophers
+
+### **`POST`**
+
+Making an API call to this endpoint adds a philosopher to the database. 
+
+#### Required:
+A correctly formatted philosopher object must be provided in the request body in order to post to the database.
+
+#### Example of correctly formatted brewery object:
+```
+{ name: <STRING>, born: <Integer>, died: <Integer>  }
+```
+
+```
+{
+	"name": "John",
+	"born": 1982,
+	"died": 2002
+}
+```
