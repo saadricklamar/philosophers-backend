@@ -2,7 +2,7 @@
 
 ## About the API
 
-BYOB is an API that provides data about breweries in Denver and the beers that they carry. Users can add data to the API through POST requests, delete data with DELETE requests, and edit data with PUT requests
+'Philosophers Backend' is an API that provides data about breweries in Denver and the beers that they carry. Users can add data to the API through POST requests, delete data with DELETE requests, and edit data with PUT requests
 
 ## /api/philosophers
 
@@ -104,8 +104,8 @@ A correctly formatted philosopher object must be provided in the request body in
 
 ```
 {
-	"name": "John",
-	"born": 1982,
-	"died": 2002
+   "name": "John",
+   "born": 1982,
+   "died": 2002
 }
 ```
