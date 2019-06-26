@@ -88,6 +88,48 @@ URL with specified id:
  }
 ```
 
+## /api/works
+
+### **`GET`**
+
+Making an API call to this endpoint returns all works written by philosophers.
+
+Data returned for each work includes:
+
+* work id
+* name of work
+* philosopher_id (connecting that work to the philosopher who wrote it)
+* creation timestamp
+* update timestamp
+
+#### Example of returned JSON:
+
+```
+[
+    {
+      "id": 10,
+      "work": "Tao Te Ching",
+      "philosopher_id": 10,
+      "created_at": "2019-06-26T15:46:20.485Z",
+      "updated_at": "2019-06-26T15:46:20.485Z"
+    },
+    {
+      id": 9,
+      "work": "The History of England",
+      "philosopher_id": 8,
+      "created_at": "2019-06-26T15:46:20.485Z",
+      "updated_at": "2019-06-26T15:46:20.485Z"
+    },
+    {
+      "id": 11,
+      "work": "The Communist Manifesto",
+      "philosopher_id": 13,
+      "created_at": "2019-06-26T15:46:20.498Z",
+      "updated_at": "2019-06-26T15:46:20.498Z"
+    }
+ ]
+  ```
+
 ## /api/philosophers
 
 ### **`POST`**
