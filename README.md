@@ -16,6 +16,7 @@ Data returned for each philosopher includes:
 * philosopher name
 * year philosopher was born
 * year philosopher died
+* an array of the works they wrote
 * creation timestamp
 * update timestamp
 
@@ -50,3 +51,26 @@ Data returned for each philosopher includes:
   }
  ]
   ```
+  
+## /api/philosophers/:id
+
+### **`GET`**
+
+Making an API call to this endpoint returns a philosopher of the specific id. 
+
+Data returned for each philosopher includes:
+
+* philosopher id
+* philosopher name
+* year philosopher was born
+* year philosopher died
+* an array of the works they wrote
+* creation timestamp
+* update timestamp
+
+#### Required:
+An id that corresponds to a brewery present in the database must be provided in the URL to return the desired JSON.
+
+URL with specified id:
+
+`localhost:3000/api/v1/philosophers/23`
