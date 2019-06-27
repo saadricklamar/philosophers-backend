@@ -89,12 +89,6 @@ const philosophersData = [{
     works: ['The Birth of Tragedy', 'The Gay Science']
   },
   {
-    name: 'Nietzsche',
-    born: 1844,
-    died: 1900,
-    works: ['The Birth of Tragedy', 'The Gay Science']
-  },
-  {
     name: 'Plato',
     born: 428,
     died: 348,
