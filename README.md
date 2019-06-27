@@ -179,14 +179,14 @@ A correctly formatted philosopher object must be provided in the request body in
 }
 ```
 
-## /api/philosophers/:id
+## /api/works/:id
 
 ### **`DELETE`**
 
-Making an API call to this endpoint deletes the philosopher with the specified id. 
+Making an API call to this endpoint deletes a work with the specified id. 
 
 #### Required:
-An id that corresponds to a philosopher present in the database must be provided in the URL.
+An id that corresponds to a work present in the database must be provided in the URL.
 
 URL with specified id:
 
