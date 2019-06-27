@@ -16,7 +16,6 @@ Data returned for each philosopher includes:
 * philosopher name
 * year philosopher was born
 * year philosopher died
-* an array of the works they wrote
 * creation timestamp
 * update timestamp
 
@@ -28,7 +27,6 @@ Data returned for each philosopher includes:
     "name": "Nietzsche",
     "born": "1844",
     "died": "1900",
-    "works": ['The Birth of Tragedy', 'The Gay Science'],
     "created_at": "2019-06-26 09:46:20.466948-06 ",
     "updated_at": "2019-06-26 09:46:20.466948-06"
   },
@@ -36,7 +34,6 @@ Data returned for each philosopher includes:
     "name": "Plato",
     "born": "428",
     "died": "348",
-    "works": ['The Republic', 'The Laws'],
     "created_at": "2019-06-26 09:46:20.467223-06",
     "updated_at": "2019-06-26 09:46:20.467223-06"
   },
@@ -45,7 +42,6 @@ Data returned for each philosopher includes:
     "name": "Rousseau",
     "born": "1712",
     "died": "1778",
-    "works": ['The Social Contract', 'A Discourse on Inequality'],
     "created_at": "2019-06-26 09:46:20.467495-06",
     "updated_at": "2019-06-26 09:46:20.467495-06"
   }
@@ -64,7 +60,6 @@ Data returned for each philosopher includes:
 * philosopher name
 * year philosopher was born
 * year philosopher died
-* an array of the works they wrote
 * creation timestamp
 * update timestamp
 
