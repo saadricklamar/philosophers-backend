@@ -4,7 +4,7 @@ const database = require('knex')(configuration); //importing knex
 const express = require('express'); //importing express
 const app = express(); //initializing express
 const port = process.env.PORT || 3000;
-app.set('port', process.env.PORT || 3000).
+app.set('port', process.env.PORT || 3000);
 app.use(express.json()) //telling express to use json
 
 app.listen(port, () => {
