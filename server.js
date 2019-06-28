@@ -3,8 +3,9 @@ const configuration = require('./knexfile')[environment]; //importing knexfile.j
 const database = require('knex')(configuration); //importing knex
 const express = require('express'); //importing express
 const app = express(); //initializing express
+const port = 3000;
 app.set('port', process.env.PORT || 3000).
-app.use(express.json()) //telling express to use json
+// app.use(express.json()) //telling express to use json
 
 app.listen(app.get('port'), () => {
   console.log(`Server is running on http://localhost:${app.get('port')}.`) // telling app to listen to port 3000, which will run the server
