@@ -3,15 +3,16 @@ const configuration = require('./knexfile')[environment]; //importing knexfile.j
 const database = require('knex')(configuration); //importing knex
 const express = require('express'); //importing express
 const app = express(); //initializing express
-// const port = 3000; // creating the port on which our server will run
+const port = 3000; // creating the port on which our server will run
 
 app.set('port', process.env.PORT || 3000).
 
 app.use(express.json()) //telling express to use json
 
 app.listen(app.get('port'), () => {
-    console.log(`App is running 🏃🏽‍ on port ${port}`) // telling app to listen to port 3000, which will run the server
+  console.log(`Server is running on http://localhost:${app.get('port')}.`) // telling app to listen to port 3000, which will run the server
 });
+
 
 app.get('/api/v1/philosophers', (request, response) => { //creating a function that will get all the philosophers
     database('philosophers').select() //going into the philosophers database and selecting all the philosophers
