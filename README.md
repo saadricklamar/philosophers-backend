@@ -201,3 +201,6 @@ URL with specified id:
 
 `localhost:3000/api/v1/philosophers/23`
 
+## Contributors
+
+Saad Baradan (https://github.com/saadricklamar)
