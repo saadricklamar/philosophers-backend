@@ -2,7 +2,7 @@
 
 ## About the API
 
-'Philosophers Backend' is the first RESTful API I built within a week. It provides data about Philosophers and the works they have written. Users can receive data through GET requests, add data to the API through POST requests, and delete data with DELETE requests.
+**Philosophers Backend** is the first RESTful API I built within a week. It provides data about Philosophers and the works they have written. Users can receive data through GET requests, add data to the API through POST requests, and delete data with DELETE requests.
 
 ## Tech Stack
 
