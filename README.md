@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-Express, Knex, PostgreSQL, Heroku
+Node.js, Express, Knex, PostgreSQL, Heroku
 
 ## Live App on Heroku
 
