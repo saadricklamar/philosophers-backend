@@ -1,34 +1,39 @@
-const philosophersData = require('../../../philosophersData');
+const philosophersData = require("../../../philosophersData");
 
 const createPhilosopher = (knex, philosopher) => {
-  return knex('philosophers').insert({
-    name: philosopher.name,
-    born: philosopher.born,
-    died: philosopher.died
-  }, 'id')
-  .then(philosopherId => {
-    let workPromises = [];
+  return knex("philosophers")
+    .insert(
+      {
+        name: philosopher.name,
+        born: philosopher.born,
+        died: philosopher.died
+      },
+      "id"
+    )
+    .then(philosopherId => {
+      let workPromises = [];
 
-    philosopher.works.forEach(work => {
-      workPromises.push(
-        createWork(knex, {
-          work: work,
-          philosopher_id: philosopherId[0]
-        })
-      )
+      philosopher.works.forEach(work => {
+        workPromises.push(
+          createWork(knex, {
+            work: work,
+            philosopher_id: philosopherId[0]
+          })
+        );
+      });
+
+      return Promise.all(workPromises);
     });
-
-    return Promise.all(workPromises);
-  })
 };
 
 const createWork = (knex, work) => {
-  return knex('works').insert(work);
+  return knex("works").insert(work);
 };
 
 exports.seed = (knex, Promise) => {
-  return knex('works').del() // delete works first
-    .then(() => knex('philosophers').del()) // delete all philosophers
+  return knex("works")
+    .del() // delete works first
+    .then(() => knex("philosophers").del()) // delete all philosophers
     .then(() => {
       let philosopherPromises = [];
 
@@ -40,4 +45,3 @@ exports.seed = (knex, Promise) => {
     })
     .catch(error => console.log(`Error seeding data: ${error}`));
 };
-
