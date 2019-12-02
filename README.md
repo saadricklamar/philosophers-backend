@@ -6,7 +6,11 @@
 
 ## Tech Stack
 
-Node.js, Express, Knex, PostgreSQL, Heroku
+* [Node.js](https://nodejs.org/en/) 
+* [Express](https://expressjs.com/) 
+* [Knex](http://knexjs.org/) 
+* [PostgreSQL](https://www.postgresql.org/)
+* [Heroku](https://signup.heroku.com/t/platform?c=70130000001xDpdAAE&gclid=CjwKCAiAqqTuBRBAEiwA7B66hRf-FLqt6P23ay-rUjafxgOBbD_1eeJpbfve4upMMI3TfluAnE5Z8hoCZNwQAvD_BwE)
 
 ## Live App on Heroku
 
