@@ -12,7 +12,7 @@
 * [PostgreSQL](https://www.postgresql.org/)
 * [Heroku](https://signup.heroku.com/t/platform?c=70130000001xDpdAAE&gclid=CjwKCAiAqqTuBRBAEiwA7B66hRf-FLqt6P23ay-rUjafxgOBbD_1eeJpbfve4upMMI3TfluAnE5Z8hoCZNwQAvD_BwE)
 
-## Live App on Heroku
+## Live API on Heroku
 
 * Philosophers Data: https://philosophers-backend.herokuapp.com/api/v1/philosophers
 * Works Data: https://philosophers-backend.herokuapp.com/api/v1/works
