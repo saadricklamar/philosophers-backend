@@ -36,14 +36,16 @@ Data returned for each philosopher includes:
 
 ```
 [
-  {
+  { 
+    "id": "15",
     "name": "Nietzsche",
     "born": "1844",
     "died": "1900",
     "created_at": "2019-06-26 09:46:20.466948-06 ",
     "updated_at": "2019-06-26 09:46:20.466948-06"
   },
-  {
+  { 
+    "id": "16",
     "name": "Plato",
     "born": "428",
     "died": "348",
@@ -52,6 +54,7 @@ Data returned for each philosopher includes:
   },
   
   {
+    "id": "17",
     "name": "Rousseau",
     "born": "1712",
     "died": "1778",
